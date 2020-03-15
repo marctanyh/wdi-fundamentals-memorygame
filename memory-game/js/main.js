@@ -1,13 +1,23 @@
-console.log("Up and running!");
+const cards = ["queen", "queen", "king", "king"];
 
-let cardOne = "queen";
+const cardsInPlay = [];
 
-let cardTwo = "queen";
+let cardOne = cards[0];
 
-let cardThree = "king";
+cardsInPlay.push("cardOne");
 
-let cardFour= "king";
+console.log("User flipped queen");
 
-console.log("User flipped " + cardOne);
+let cardTwo = cards[2];
 
-console.log("User flipped " + cardThree);
+cardsInPlay.push("cardTwo")
+
+console.log("User flipped king");
+
+if (cardsInPlay.length === 2 && cardsInPlay[0] === cardsInPlay[1]) {
+    result = alert("You found a match!");
+}
+
+if (cardsInPlay.length === 2 && cardsInPlay[0] !== cardsInPlay[1]) {
+    result = alert("Sorry, try again.");
+}
